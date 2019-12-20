@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+</head>
+<h1>кука:</h1>
+<p id="container"></p>
+
+<script>
+    const container = document.querySelector("#container");
+    const cookie = document.cookie.replace(/(?:(?:^|.*;\s*)viuserid\s*\=\s*([^;]*).*$)|^.*$/, "$1") || "такой куки нет";
+    container.innerHTML = cookie;
+</script>
+</body>
+</html>
